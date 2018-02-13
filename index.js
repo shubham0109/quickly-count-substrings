@@ -12,7 +12,7 @@ function count (str, substr, opts) {
   if (substr === '') return str.length + 1
 
   const skip = opts && opts.overlap ? 1 : substr.length
-  let offset = skip > 1 ? (- substr.length) : -1
+  let offset = skip > 1 ? (-substr.length) : -1
   let r = 0
 
   while (true) {
